@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1: Interactive Mood Mix | Colin Moore 480's Blog</title>
+    <link rel="stylesheet" href="../css/480blog.css">
+    <link rel="stylesheet" href="../css/post.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Colin Moore 480 Blog</h1>
+
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Posts ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="post1.html">Post 1</a></li>
+                            <li><a href="post2.html">Post 2</a></li>
+                            <li><a href="post3.html">Post 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="post-content">
+
+            <div class="post-header">
+                <span class="exercise-label">Exercise 1</span>
+                <h1 class="post-title"> Mood Mix</h1>
+                <div class="post-meta">
+                    <span class="category">TouchDesigner</span>
+                </div>
+            </div>
+
+            <section class="post-section">
+                <h2>Concept & Intent</h2>
+                <p>
+                    Going into this exercise, I did not start with a predefined emotional outcome.
+                    Instead, my initial intent was simply to work with an existing video.
+                    I chose a video of my dogs playing together because it was easily accessible and emotionally
+                    meaningful,
+                    allowing me to focus more on learning TouchDesigner rather than sourcing new
+                    content.
+                </p>
+                <p>
+                    As I began building the network and experimenting with interaction and color,
+                    the emotional direction of the project developed naturally. The contrast
+                    between red and blue, combined with the crossfading interaction, began to
+                    suggest feelings of fear and sadness. These moods were not fully planned from
+                    the beginning but emerged through testing, adjustment, and aesthetic
+                    decision-making during the process.
+                </p>
+            </section>
+
+            <section class="post-section">
+                <h2>Process of Creating this Exercise</h2>
+                <ol class="process-list">
+                    <li>
+                        I started by choosing my video, which was footage of my dogs playing together
+                        when my second dog was still a puppy.
+                    </li>
+                    <li>
+                        Next, I added two Movie File In TOPs and connected each of them to separate
+                        Ramp TOPs. I changed the colors of the ramps so I could clearly see what was
+                        being output when I connected the two Ramp TOPs to a Cross TOP.
+                    </li>
+                    <li>
+                        Third, I added a Mouse In CHOP and connected it to the Cross TOP. I didn’t like
+                        how the transition felt at first, so I added a Math CHOP between them and
+                        experimented with the multiply value. I found that a value of 4 worked best,
+                        so I kept it.
+                    </li>
+                    <li>
+                        After that, I experimented with the ramp colors and found that I liked blue
+                        and red the most.
+                    </li>
+                    <li>
+                        Finally, I added two Text TOPs and connected them to the ramps and then to the
+                        Cross TOP. I used bold text so the words were still visible even though they
+                        matched the background color. The red reminded me of wolves, since dogs are
+                        domesticated wolves, so the red text became “Gory Wolves.” For the blue, I was
+                        originally aiming for gray, but blue worked better to express sadness and
+                        nostalgia, referencing the “Good Old Times” and how fun they were. Overall,
+                        the emotions I wanted to convey were sadness and fear.
+                    </li>
+                </ol>
+            </section>
+
+
+
+
+
+            <!-- Media Section -->
+            <section class="post-section">
+                <h2>Process & Results</h2>
+
+                <div class="media-container">
+                    <div class="media-item">
+                        <h3>TouchDesigner Network</h3>
+                        <img src="../media/Images/MoodMixImage.png"
+                            alt="TouchDesigner network snapshot showing the node connections and flow for Mood Mix exercise">
+                        <p class="caption">Editor network snapshot showing the complete TouchDesigner flow for my Mood
+                            Mix exercise</p>
+                    </div>
+
+                    <div class="media-item">
+                        <h3>Interactive Demonstration</h3>
+                        <a href="https://youtu.be/Jo2hcJpr_Qs" target="_blank" rel="noopener noreferrer"
+                            class="video-link">
+                            Watch the interactive Mood Mix demo on YouTube →
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            <!-- Navigation -->
+            <nav class="post-navigation">
+                <a href="../index.html" class="nav-button">← Back to Blog</a>
+                <a href="post2.html" class="nav-button">Next Post →</a>
+            </nav>
+
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Colin Moore. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
