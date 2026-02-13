@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2: Control Blue | Colin Moore 480's Blog</title>
+    <link rel="stylesheet" href="../css/480blog.css">
+    <link rel="stylesheet" href="../css/post.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Colin Moore 480 Blog</h1>
+
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Posts ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="post1.html">Post 1</a></li>
+                            <li><a href="post2.html">Post 2</a></li>
+                            <li><a href="post3.html">Post 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="post-content">
+
+            <div class="post-header">
+                <span class="exercise-label">Exercise 2</span>
+                <h1 class="post-title"> Control Blue</h1>
+                <div class="post-meta">
+                    <span class="category">TouchDesigner</span>
+                </div>
+            </div>
+
+            <section class="post-section">
+                <h2>Concept & Intent</h2>
+                <p>
+                    For this assignment, I needed to use containers with two different controls that affect a video,
+                    while incorporating the color blue. Movie File In TOP → Level TOP → Fit TOP → Out TOP, with
+                    Slider/Button controlling parameters through CHOP exports.
+                </p>
+            </section>
+
+            <section class="post-section">
+                <h2>Process of Creating this Exercise</h2>
+                <ol class="process-list">
+                    <li>
+                        First I made a container where it will have the controls and the effects my video will
+                        have.
+                    </li>
+                    <li>
+                        Inside the container, I added a Button COMP and a Slider COMP. Connected them both to a Math
+                        CHOP. I also added a moviefilein TOP for the video and connected it to an Out TOP so it could
+                        displayed at the top level window COMP.
+                    </li>
+                    <li>
+                        Next I started looking at different effects that I knew I could make blue without much struggle
+                        and I found TOP level. Then I experiment with the Level TOP options and making the color blue
+                        prominently I liked the inverted one the best and connected it with my
+                        math that is connected with the slider so did that.
+                    </li>
+                    <li>
+                        I had a button and I was not loving much options with the level and was looking at brightness
+                        but didn't like the 0-1 brightness so I made the math range from 0-1 to 1-2 so it wouldn't be
+                        dark on my video.
+                    </li>
+                    <li>
+                        I then started working in the upper part and connected the container to null TOP then reference
+                        another container called container_content with background param of null1. Both the container1
+                        and container_content were connected to a third container named controls_content. Then I have
+                        the window reference the controls_content.
+                    </li>
+                    <li>
+                        Then I saw that the controls were not showing up in my container called controls_content and
+                        decided inside the container1 where the movie comes from to add a TOP fit between the TOP level
+                        and TOP out. I set the fit resolution to 1280 by 720 and it was fixed.
+                    </li>
+                    <li>
+                        Then in the upper level where the three containers are I did some adjustments with the
+                        containers, window and null. For Container 1 I set height to 200 , width was still 400. I align
+                        container1 children top to bottom. For container_content I made the width to 1280 and height to
+                        720. The background TOP still reference the null1. For controls_content I set width 1680 and
+                        height 720. Had controls_content children align left to right.
+                    </li>
+                    <li>
+                        Lastly I adjust the window COMP I justify Horizontal Right.
+                    </li>
+                </ol>
+            </section>
+
+
+
+
+
+            <!-- Media Section -->
+            <section class="post-section">
+                <h2>Process & Results</h2>
+
+                <div class="media-container">
+                    <div class="media-item">
+                        <h3>TouchDesigner Network</h3>
+                        <img src="../media/Images/Inside container1.png"
+                            alt="TouchDesigner Container network flow for Control blue exercise">
+                        <p class="caption">TouchDesigner Container network flow for Control blue exercise</p>
+                    </div>
+                    <div class="media-item">
+                        <h3>TouchDesigner Network</h3>
+                        <img src="../media/Images/ControlBlue.png"
+                            alt="TouchDesigner showing the upper level of the container showing how the container from above is displayed on a window">
+                        <p class="caption">TouchDesigner showing the upper level of the container showing how the
+                            container1 elements is displayed on a window</p>
+                    </div>
+
+                    <div class="media-item">
+                        <h3>Interactive Demonstration</h3>
+                        <a href="https://youtu.be/uswkn0KsaPk" target="_blank" rel="noopener noreferrer"
+                            class="video-link">
+                            Watch the interactive Control blue demo on YouTube →
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            <!-- Navigation -->
+            <nav class="post-navigation">
+                <a href="../index.html" class="nav-button">← Back to Blog</a>
+                <a href="post2.html" class="nav-button">Next Post →</a>
+            </nav>
+
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Colin Moore. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
