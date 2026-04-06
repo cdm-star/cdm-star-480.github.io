@@ -42,82 +42,93 @@
         <article class="post-content">
 
             <div class="post-header">
-                <span class="exercise-label"></span>
-                <h1 class="post-title"> </h1>
+                <span class="exercise-label">Project 2</span>
+                <h1 class="post-title"> Charles Gaines Inspirartion Piece</h1>
                 <div class="post-meta">
                     <span class="category">TouchDesigner</span>
                 </div>
             </div>
 
             <section class="post-section">
-                <h2>Summary</h2>
-                <p>
-
-                </p>
-            </section>
-
-            <!-- Media Section -->
-            <section class="post-section">
-                <h2>Process & Results</h2>
+                <h2>Art By Charles Gaines</h2>
 
                 <div class="media-container">
                     <div class="media-item">
-                        <h3>TouchDesigner Network</h3>
-                        <img src="" alt=" ">
-                        <p class="caption">
-                        </p>
+                        <h3>ArtWork</h3>
+                        <img src="../media/Images/CharlesGainesInspirationPiece.png"
+                            alt="The art work I choose to Inspire me by Charles Gaines">
+                        <p class="caption">The art work I choose to Inspire me by Charles Gaines</p>
                     </div>
 
 
                 </div>
+            </section>
+
+            <section class="post-section">
+                <h2>Summary</h2>
+                <p>
+                    I chose the above piece by Charles Gaines titled <i>Untitled</i> (1969–1972). In my project and
+                    video, you can see that I created circles with different colors. Gaines’ work features overlapping
+                    colors and grouping, which I also incorporated into my piece. I used my own videos and applied
+                    randomly selected colors while organizing them into grouped circular forms.
+                </p>
             </section>
 
             <section class="post-section">
                 <h2>Process of Creating this Exercise</h2>
+                <p>
+                    The TOPs I used in this project include Movie File In, Ramp, Circle, Fit, Out, Composite, Switch,
+                    and Null.
+                </p>
+
                 <ol class="process-list">
                     <li>
                         <p>
-
+                            First, I selected the videos I wanted to use. I chose two videos from my camera, both
+                            featuring my dog. I connected them to a Composite TOP and set the operation to "Add." Then,
+                            I connected that result to another Composite TOP with a Circle TOP. This was the only time I
+                            used the "Multiply" operator in this project.
                         </p>
                     </li>
 
                     <li>
                         <p>
-
+                            Next, I created two circles with the same dimensions but different colors. I connected them
+                            using a Cross TOP and then combined them with the previous composition. I repeated this
+                            process multiple times, layering circles and video textures. I experimented with different
+                            colors and ensured the circles became progressively smaller to create a grouped effect.
+                        </p>
+                        <p>
+                            I then connected the two movie inputs to a Switch TOP. A slider was connected through a Math
+                            CHOP, which remapped the range from 0–1 to 0–2. This allowed me to switch between the inputs
+                            interactively.
+                        </p>
+                        <p>
+                            Only one circle had a visible fill color, while the others had their alpha set to 0. The
+                            main circle was purple because my dog, Violet, is featured prominently, making it a
+                            meaningful central element. This was then connected to a Composite TOP, followed by a Fit
+                            TOP, and finally an Out TOP.
                         </p>
                     </li>
+
                     <li>
                         <p>
-
+                            At a higher level, I organized everything inside containers. The Out TOP was connected to a
+                            Null TOP, which was then connected to another container. These containers were combined into
+                            a third container that aligns all elements. This final container is what the window
+                            references.
                         </p>
                     </li>
+
                     <li>
                         <p>
-
+                            Finally, I adjusted the resolution. The Movie File In TOPs were set to 1280×720, while the
+                            circles were set to 720×720 to ensure they remained perfectly circular rather than appearing
+                            stretched.
                         </p>
                     </li>
-                    <li>
-                        <p>
-
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-
-                        </p>
-                    </li>
-
                 </ol>
             </section>
-
-
-
-
 
             <!-- Media Section -->
             <section class="post-section">
@@ -126,19 +137,29 @@
                 <div class="media-container">
                     <div class="media-item">
                         <h3>TouchDesigner Network</h3>
-                        <img src="" alt="">
-                        <p class="caption">
-                        </p>
+                        <img src="../media/charlesGainesfinalpost/Inside container1.png" alt="Shows how everything is connected, including circles, composites, ramps, and
+                            sliderss">
+                        <p class="caption">Shows how everything is connected, including circles, composites, ramps, and
+                            sliders.</p>
                     </div>
 
-                    <div class="media-item">
-                        <h3>Interactive Demonstration</h3>
-                        <a href="" target="_blank" rel="noopener noreferrer" class="video-link">
-                            Watch the interactive Charles Gaines Project demo on YouTube →
-                        </a>
+                    <div class="media-container">
+                        <div class="media-item">
+                            <h3>TouchDesigner Network</h3>
+                            <img src="../media/charlesGainesfinalpost/Windowlevel.png" alt="Shows the window-level layout
+                                and how the controls are linked.">
+                            <p class="caption">Shows the window-level layout and how the controls are linked.</p>
+                        </div>
 
+                        <div class="media-item">
+                            <h3>Interactive Demonstration</h3>
+                            <a href="https://youtu.be/c6RfwbKFvwo" target="_blank" rel="noopener noreferrer"
+                                class="video-link">
+                                Watch the interactive Charles Gaines Project demo on YouTube →
+                            </a>
+
+                        </div>
                     </div>
-                </div>
             </section>
 
 
@@ -150,19 +171,8 @@
                     <ul class="reference-list">
 
                         <li>
-                            <span class="reference-title">
-
-                            </span>
-                            <span class="reference-description">
-
-                            </span>
-                            <a class="reference-link" href="" target="_blank">
-
-                            </a>
-                            <span class="reference-meta">
-
-                            </span>
-
+                            In addition to the TouchDesigner documentation, I explored and experimented with the
+                            Composite TOP to better understand its functionality.
                         </li>
 
 
